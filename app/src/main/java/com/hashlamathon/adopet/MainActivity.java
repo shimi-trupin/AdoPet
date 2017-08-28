@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class MainSwipe extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -137,19 +137,20 @@ public class MainSwipe extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
+            Fragment fragment = null;
             switch (position) {
                 case 0:
-                    Fragment fr1 = new FragmentTest();
-                    return fr1;
+                    fragment = new FragmentTest();
+                    break;
                 case 1:
-                    Fragment fr2=new FragmentHome();
-                    return fr2;
+                    fragment = new FragmentHome();
+                    break;
                 case 2:
 //                    FragmentHome fr3=new MyAnimalRecyclerViewAdapter(animals, null);
-                    FragmentTest fr3 = new FragmentTest();
-                    return fr3;
+                    fragment = new FragmentTest();
+                    break;
             }
-            return null;
+            return fragment;
         }
 
         @Override

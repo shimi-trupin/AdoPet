@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.hashlamathon.adopet.MainSwipe"
+            android:name="com.hashlamathon.adopet.MainActivity"
             android:label="@string/title_activity_main_swipe"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
