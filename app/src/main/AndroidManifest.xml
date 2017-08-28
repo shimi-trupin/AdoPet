@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.adopet.adopet">
+    package="com.hashlamathon.adopet">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainSwipe"
+            android:name="com.hashlamathon.adopet.MainSwipe"
             android:label="@string/title_activity_main_swipe"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

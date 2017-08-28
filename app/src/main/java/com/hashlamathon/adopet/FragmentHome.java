@@ -1,21 +1,30 @@
-package com.adopet.adopet;
+package com.hashlamathon.adopet;
 
 //import android.app.Fragment;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-/**
- * Created by shimi on 28/08/2017.
- */
+import com.hashlamathon.flingswipe.SwipeFlingAdapterView;
+
+import java.util.ArrayList;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+import butterknife.OnClick;
+
 
 public class FragmentHome extends Fragment {
-   private int flag;
 
+    private ArrayList<String> al;
+    private ArrayAdapter<String> arrayAdapter;
+    private int i;
 
+    @InjectView(R.id.frame) SwipeFlingAdapterView flingContainer;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

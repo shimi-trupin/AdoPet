@@ -1,4 +1,4 @@
-package com.adopet.adopet;
+package com.hashlamathon.adopet;
 
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;

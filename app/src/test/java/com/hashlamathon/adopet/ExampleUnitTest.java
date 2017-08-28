@@ -1,4 +1,4 @@
-package com.adopet.adopet;
+package com.hashlamathon.adopet;
 
 import org.junit.Test;
 
