@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
-    tools:context="com.hashlamathon.adopet.DetailsActivity">
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dog1"/>
 
-</android.support.constraint.ConstraintLayout>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="Name"/>
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/age"/>
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/gender"/>
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/weight"/>
+        <TextView
+            android:id="@+id/castrated"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/castrated"/>
+        <TextView
+            android:id="@+id/purebread"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/purebread"/>
+    </LinearLayout>
+</ScrollView>

@@ -2,6 +2,7 @@ package com.hashlamathon.adopet;
 
 //import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -112,6 +113,8 @@ public class FragmentHome extends Fragment {
                 @Override
                 public void onItemClicked(int itemPosition, Object dataObject) {
                     makeToast(getActivity(), "Clicked!");
+                    Intent intent = new Intent(getActivity(), DetailsActivity.class);
+                    startActivity(intent);
                 }
             });
         } catch (Exception e) {
